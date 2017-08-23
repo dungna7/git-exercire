@@ -3,7 +3,7 @@ const app = require("express")();
 const bodyParser = require("body-parser");
 const bookController = require("./controllers/book");
 const data = require("./models/book");
-console.log('dasdasd')
+console.log('1')
 app.use(bodyParser.urlencoded())
 console.log('dasdasd')
 app.route('/books')
@@ -11,13 +11,10 @@ app.route('/books')
     .post(bookController.create)
     .put()
     .delete()
-	console.log('dasdasd')
-	console.log('dasdasd')
-
 app.route('/books/:id')
     .get(bookController.getOne)
     .post()
     .put(bookController.update)
     .delete(bookController.delete)
 
-app.listen(5000)
+app.listen(6000)
