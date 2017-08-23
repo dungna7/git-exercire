@@ -5,7 +5,7 @@ const bookController = require("./controllers/book");
 const data = require("./models/book");
 console.log('dasdasd')
 app.use(bodyParser.urlencoded())
-console.log('dasdasd')
+
 app.route('/books')
     .get(bookController.getAll)
     .post(bookController.create)
@@ -13,6 +13,7 @@ app.route('/books')
     .delete()
 	console.log('dasdasd')
 	console.log('dasdasd')
+
 
 app.route('/books/:id')
     .get(bookController.getOne)
